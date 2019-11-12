@@ -27,7 +27,7 @@ namespace R5T.Sitonia.Default
                     return FileFormat.JPG;
 
                 case "PNG":
-                    return FileFormat.JPG;
+                    return FileFormat.PNG;
 
                 default:
                     return FileFormat.Unknown;
