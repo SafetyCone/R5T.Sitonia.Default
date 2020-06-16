@@ -43,7 +43,7 @@ namespace R5T.Sitonia.Default
             {
                 var fileExtension = stringlyTypedPathOperator.GetFileExtension(imageFilePath.Value);
 
-                var message = EnumHelper.UnrecognizedEnumerationValueMessage<FileFormat>(fileExtension);
+                var message = EnumerationHelper.UnrecognizedEnumerationValueMessage<FileFormat>(fileExtension);
                 throw new Exception(message);
             }
 
@@ -64,7 +64,7 @@ namespace R5T.Sitonia.Default
                     return FileExtensions.Png;
 
                 default:
-                    var message = EnumHelper.UnexpectedEnumerationValueMessage<FileFormat>(fileFormat);
+                    var message = EnumerationHelper.UnexpectedEnumerationValueMessage<FileFormat>(fileFormat);
                     throw new Exception(message);
             }
         }
